@@ -32,6 +32,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          curl -o- "https://dl-cli.pstmn.io/install/osx_arm64.sh" | sh
           postman login --with-api-key PMAK-68029753c627f20001007265-7333a37077872eaac9831a4c6a2475b3c9
           postman collection run "28376745-310ad8df-39c6-45cf-9a29-63e906b2c2f4" -e "28376745-033e1618-9d72-4e4e-94f1-7391ba6a88e0"
